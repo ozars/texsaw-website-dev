@@ -1,0 +1,31 @@
+mixin print_program(index)
+    table.table.table-condensed.smaller-text
+      - var program = programs[index];
+      thead
+        tr
+          th(colspan='2')
+            p #{weekDays[index]}, #{months[index]} #{daysth[index]}, #{year}
+            p #{program_subjects[index]}<br />#{program_places[index]}
+      tbody
+        each entry, index in program
+          tr
+            td #{entry[0]}
+            td
+              - var topics = entry[1];
+              each topic, index2 in topics
+                span !{topic}<br />
+div.container.text-center
+  div.col-md-12.text-center.bigger-text
+    i.fa.fa-clock-o
+  div.col-md-12
+  p.headline Program Schedule for #{short_title}
+  div.col-md-6.col-xs-12
+    +print_program(0)
+  div.col-md-6.col-xs-12
+    +print_program(1)
+  div.col-md-6.col-xs-12
+    a.btn.btn-default.requirements(href='sw_hw_requirements.html')
+      p.bigger-text
+        i.fa.fa-cogs
+      p.
+        Software/Hardware Requirements

@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{short_title}
+    link(rel='stylesheet', href='css/jquery.fullPage.css')
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/animate.css')
+    link(rel='stylesheet', href='css/default.css')
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/jquery.fullPage.min.js')
+    script.
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          navigation: true,
+          responsiveWidth: 768,
+          bigSectionsDestination: top,
+          anchors: ['introduction', 'results', 'description', 'accommodation', 'program', 'venue', 'footer']
+        });
+      });
+  body
+    //- div.header
+    //-   img.logo(src='logo.png')
+    //- div.footer
+    //-   a.register
+    div#fullpage
+      div.section.text-center.white-text.flame-orange
+        include includes/section_1_intro.pug
+      div.section.text-center.white-text.solar-orange
+        include includes/section_1a_results.pug
+      div.section.white-text.eco-green
+        include includes/section_2_description.pug
+      div.section.white-text.space-blue
+        include includes/section_3_accomodation.pug
+      div.section.black-text.seedling-green
+        include includes/section_4_program.pug
+      div.section.white-text.solar-orange
+        include includes/section_5_venue.pug
+      div.section.white-text.solar-orange.fp-auto-height.footer
+        div.container.text-right
+          span Designed by Omer Ozarslan (c) 2017
+    //- div.bottom-fixed
+    //-   a.btn.btn-default.btn-lg(href='https://ezpay.utdallas.edu/C20239_ustores/web/store_main.jsp?STOREID=158' target='_blank') Register Now

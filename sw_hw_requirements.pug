@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    base(target='_blank')
+    title #{short_title}
+    link(rel='stylesheet', href='css/darkly/bootstrap.min.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/animate.css')
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    style.
+      body { margin-top: 10vh; }
+      span, b, a { font-size: 18px; }
+  body
+    div.container
+      div.row.text-center
+        h1 Software/hardware requirements for participants
+      div.row.text-justify
+        div.col-xs-12
+          ul
+            li
+              b Web Security Workshop:
+              span  Please download WebScarab and OWASP WebGoat.
+            li
+              b Reverse Engineering Workshop
+              ul
+                li
+                  b Recommended specs:
+                  span  At least 4GB of ram and 20 GB of free space.
+                li
+                  span
+                    | We will be utilizing two virtual machines in Virtual Box
+                    | for this presentation. One will be a Kali Virtual Machine
+                    | and the other a FLARE VM which is loaded on top of a standard
+                    | Windows 10 VM. These virtual machines are already pre-built
+                    | and only require you to import them into virtual box.
+                    | The virtual machines also come preloaded with demo files that
+                    | will be used in the presentation.
+            li
+              b Crypto Workshop:
+              span
+                |  John the Ripper tool to be installed on a laptop.
+                | Alternatively, participants can install Kali Linux
+                | virtual machine on their laptops.
+                | Kali Linux comes with John the Ripper by default.
+        div.col-xs-12
+          h3 Download links of the related software
+          ul
+            li
+              a(href='https://github.com/OWASP/OWASP-WebScarab/archive/master.zip') WebScarab
+              ul
+                li
+                  a(href='https://www.owasp.org/index.php/WebScarab_Getting_Started')
+                    | WebScarab Tutorial
+            li
+              a(href='https://sourceforge.net/projects/owasp/files/WebGoat/WebGoat%205.2/WebGoat-OWASP_Standard-5.2.zip/download') OWASP WebGoat
+            li
+              a(href='https://www.virtualbox.org/wiki/Downloads') Virtual Box
+              ul
+                li
+                  a(href='http://techantidote.com/install-kali-linux-in-virtualbox-using-ova-file/')
+                    | How to import images to into Virtual Box
+            li
+              a(href='https://drive.google.com/file/d/0BxqsGACziq6RQ2hteExPMzB5Rjg/view?usp=sharing')
+                | Kali Virtual Box image
+              ul
+                li
+                  a(href='https://utdallas.box.com/s/gjg9amxn6daszu868bbhv33s6whce4wt')
+                    | Mirror
+            li
+              a(href='https://drive.google.com/file/d/0BxqsGACziq6RcHZYM3lNcHU3Nmc/view?usp=sharing')
+                | FLARE VM image
+              ul
+                li
+                  a(href='https://utdallas.box.com/s/4lbm0742061sxpz4whs41zge7yrl44da')
+                    | Mirror
+            li
+              a(href='http://www.openwall.com/john/') John the Ripper
+          p.text-center
+            a(href='index.html#program', target='_self') Back to TexSAW website

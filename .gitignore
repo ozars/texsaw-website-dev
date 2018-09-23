@@ -1,0 +1,8 @@
+/node_modules/
+/artifacts/
+/www/css/default.css
+*.html
+*.log
+*.zip
+*~
+*.sw?
