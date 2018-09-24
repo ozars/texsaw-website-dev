@@ -12,6 +12,8 @@ included in this repository.
 
 ## Usage
 
+- Make sure you have node.js and npm installed.
+- `npm install`: Run once to install required dependencies locally.
 - `npm run dev`: Run development server on port 8081. This server watchs
 modified files automatically and compiles them into `www` directory.
 - `npm run edit`: Open source code files in the default editor (`$EDITOR`).
