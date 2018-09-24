@@ -11,6 +11,13 @@ included in this repository.
 [texsaw-2017]: https://csi.utdallas.edu/events/TexSAW-2017/
 [texsaw-2016]: https://csi.utdallas.edu/events/TexSAW-2016/TexSAW_2016.html
 
+## Usage
+
+- `npm run dev`: Run development server on port 8081. This server watchs
+modified files automatically and compiles them into `www` directory.
+- `npm run edit`: Open source code files in the default editor (`$EDITOR`).
+- Just copy contents of `www` directory to web server to publish.
+
 ## License Acknowledgements
 
 This project is licensed under [MIT](./LICENSE).
