@@ -1,7 +1,8 @@
 {
-  "name": "texsawpp",
+  "name": "texsaw-website-dev",
   "version": "1.0.0",
   "description": "TexSAW website",
+  "repository": "github:ozars/texsaw-website-dev",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
