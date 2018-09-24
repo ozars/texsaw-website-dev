@@ -36,16 +36,9 @@ function compile_pug(data, pugFile, outFile)
     fs.writeFile(outFile, html, handler());
 }
 
-watch('./', { recursive: true, filter: (name) => ignoredWatch(/\.scss$/, name)}, (evt, fname) => {
-  console.log('scss update: ' + fname);
-  var outFile = path.join(cssDir, path.basename(fname, '.scss') + '.css');
-  sass.render({ file : fname },
-      handler((res) => { fs.writeFile(outFile, res.css, handler()); })
-  );
-});
-
-watch('./', { recursive: true, filter: (name) => ignoredWatch(/(\.pug$)|(\.js$)/, name)}, (evt, fname) => {
-  console.log('pug update: ' + fname);
+function compile_all_pug()
+{
+  console.log('compile all pug');
   try {
     delete require.cache[require.resolve('./data.js')];
   } catch(_) {}
@@ -57,7 +50,32 @@ watch('./', { recursive: true, filter: (name) => ignoredWatch(/(\.pug$)|(\.js$)/
   } catch(err) {
     console.error(err.stack);
   }
+}
+
+function compile_all_scss()
+{
+  console.log('compile all scss');
+  var outFile = path.join(cssDir, 'default.css');
+  sass.render({ file : 'includes/default.scss'},
+      handler((res) => { fs.writeFile(outFile, res.css, handler()); })
+  );
+}
+
+watch('./', { recursive: true, filter: (name) => ignoredWatch(/\.scss$/, name)}, (evt, fname) => {
+  console.log('scss update: ' + fname);
+  var outFile = path.join(cssDir, path.basename(fname, '.scss') + '.css');
+  sass.render({ file : fname },
+      handler((res) => { fs.writeFile(outFile, res.css, handler()); })
+  );
 });
+
+watch('./', { recursive: true, filter: (name) => ignoredWatch(/(\.pug$)|(\.js$)/, name)}, (evt, fname) => {
+  console.log('pug update: ' + fname);
+  compile_all_pug();
+});
+
+compile_all_scss();
+compile_all_pug();
 
 console.log('Starting server...');
 var server = app.listen(8081);
