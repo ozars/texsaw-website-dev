@@ -5,7 +5,7 @@
   "repository": "github:ozars/texsaw-website-dev",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js app.js",
     "edit": "$EDITOR index.pug data.js *.pug includes/* app.js package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,7 @@
     "express": "^4.15.4",
     "node-sass": "^4.5.3",
     "node-watch": "^0.5.5",
+    "nodemon": "^1.18.4",
     "pug": "^2.0.0-rc.4"
   }
 }
