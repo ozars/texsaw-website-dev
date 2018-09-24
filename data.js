@@ -1,12 +1,13 @@
 function Data() {
     /* CONFIGURATION PART */
 
-    this.year        = '2017';
-    this.dates       = ['11/03/2017', '11/04/2017'];
+    this.year        = '2018';
+    this.dates       = ['11/02/2018', '11/03/2018'];
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
-    this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_86ArS5bd9AsE0QZ';
-    this.accom_date  = 'October 13th';
+    this.reg_link    = '#TBA';
+    this.accom_link  = '#TBA';
+    this.accom_date  = 'TBA';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.programs = [

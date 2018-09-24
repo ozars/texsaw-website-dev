@@ -18,19 +18,22 @@ html
           navigation: true,
           responsiveWidth: 768,
           bigSectionsDestination: top,
-          anchors: ['introduction', 'results', 'description', 'accommodation', 'program', 'venue', 'footer']
+          anchors: [
+            'introduction',
+            //- 'results',
+            'description',
+            'accommodation',
+            'program',
+            'venue',
+            'footer']
         });
       });
   body
-    //- div.header
-    //-   img.logo(src='logo.png')
-    //- div.footer
-    //-   a.register
     div#fullpage
       div.section.text-center.white-text.flame-orange
         include includes/section_1_intro.pug
-      div.section.text-center.white-text.solar-orange
-        include includes/section_1a_results.pug
+      //- div.section.text-center.white-text.solar-orange
+      //-   include includes/section_1a_results.pug
       div.section.white-text.eco-green
         include includes/section_2_description.pug
       div.section.white-text.space-blue
@@ -41,6 +44,6 @@ html
         include includes/section_5_venue.pug
       div.section.white-text.solar-orange.fp-auto-height.footer
         div.container.text-right
-          span Designed by Omer Ozarslan (c) 2017
-    //- div.bottom-fixed
-    //-   a.btn.btn-default.btn-lg(href='https://ezpay.utdallas.edu/C20239_ustores/web/store_main.jsp?STOREID=158' target='_blank') Register Now
+          span Designed by Omer Ozarslan (c) 2018
+    div.bottom-fixed
+      a.btn.btn-default.btn-lg(href=reg_link, target='_blank') Register Now
