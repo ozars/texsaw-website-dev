@@ -16,10 +16,6 @@ included in this repository.
 This project is licensed under [MIT](./LICENSE).
 
 Other packages distributed with this repository and their licenses:
-- express v4.15.4 (MIT)
-- node-sass v4.5.3 (MIT)
-- node-watch v0.5.5 (MIT)
-- pug v2.0.0-rc.4 (MIT)
 - jQuery v3.2.1 (MIT)
 - fullPage v2.9.4 (MIT)
 - Bootstrap v3.3.7 (MIT)
