@@ -14,7 +14,7 @@ app.use('/', express.static('www'));
 function ignoredWatch(reg, name)
 {
   // console.log('checking ' + name + ' against ' + reg);
-  return !/node_modules/.test(name) && !/www/.test(name) &&
+  return !/node_modules/.test(name) && !/www/.test(name) && !/\.git/.test(name) &&
     ((fs.existsSync(name) && fs.lstatSync(name).isDirectory()) || reg.test(name));
 }
 
