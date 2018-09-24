@@ -6,8 +6,8 @@ function Data() {
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
     this.reg_link    = '#TBA';
-    this.accom_link  = '#TBA';
-    this.accom_date  = 'TBA';
+    this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_bei29GAVbrBAxcV';
+    this.accom_date  = 'October 17';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.programs = [
