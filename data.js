@@ -8,10 +8,8 @@ function Data() {
     this.reg_link    = '#TBA';
     this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_bei29GAVbrBAxcV';
     this.accom_date  = 'October 17';
-    this.meta_desc   = `TexSAW Security Awareness Week targets students who are
-      interested in pursuing computer security. Students will be exposed to
-      security concepts which will expand their knowledge of cyber security and
-      broaden their career opportunities.`.replace(/\s*\r?\n\s*/g, " ");
+    this.meta_desc   = `Texas Security Awareness Week targets students who are
+      interested in pursuing computer security.`.replace(/\s*\r?\n\s*/g, " ");
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.programs = [
