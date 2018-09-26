@@ -5,7 +5,7 @@ function Data() {
     this.dates       = ['11/02/2018', '11/03/2018'];
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
-    this.reg_link    = '#TBA';
+    this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
     this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_bei29GAVbrBAxcV';
     this.accom_date  = 'October 17';
     this.meta_desc   = `Texas Security Awareness Week targets students who are
