@@ -8,8 +8,6 @@ function Data() {
     this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
     this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_bei29GAVbrBAxcV';
     this.accom_date  = 'October 17';
-    this.meta_desc   = `Texas Security Awareness Week targets students who are
-      interested in pursuing computer security.`.replace(/\s*\r?\n\s*/g, " ");
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.programs = [
@@ -54,6 +52,12 @@ function Data() {
     this.days        = this.dates.map(x => x.getDate());
     this.daysth      = this.days.map(x => this.ordSuffixOf(x));
     this.months      = this.dates.map(x => x.toLocaleDateString('en-US', { month : 'long' }));
+    this.meta_desc   =
+     `${this.long_title}, ${this.days[0]}-${this.days[1]} ${this.months[0]}
+      ${this.year}, Richardson. ${this.short_title} targets students who are
+      interested in pursuing computer security. Students will be exposed to
+      security concepts which will expand their knowledge of cyber security and
+      broaden their career opportunities.` .replace(/\s*\r?\n\s*/g, " ");
 }
 
 Data.prototype.ordSuffixOf = function(i) {
