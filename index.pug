@@ -28,6 +28,26 @@ html
             'venue',
             'footer']
         });
+        var $regnow = $('#regnow');
+        if ($regnow) {
+          var scrollFunc = function() {
+            var distToBottom = $(document).height() - $(window).scrollTop() - $(window).height();
+            var regnowDistToBottom = $(window).height() + $(window).scrollTop() - $regnow.offset().top;
+            if (distToBottom < 1.5 * regnowDistToBottom) {
+              $regnow.css({ opacity: distToBottom / (1.5 * regnowDistToBottom) });
+            } else {
+              $regnow.css({ opacity: 1 });
+            }
+          }
+          $(window).scroll(scrollFunc);
+          $(window).resize(function() {
+            if ($(document).height() == $(window).height()) {
+              $regnow.css({ opacity : 1 });
+            } else {
+               scrollFunc();
+            }
+          });
+        }
       });
   body
     div#fullpage
@@ -49,4 +69,4 @@ html
             a(href="https://github.com/ozars/texsaw-website-dev",
             target='_blank') Open Source!
     div.bottom-fixed
-      a.btn.btn-default.btn-lg(href=reg_link, target='_blank') Register Now
+      a#regnow.btn.btn-default.btn-lg(href=reg_link, target='_blank') Register Now
