@@ -4,9 +4,10 @@ This project stores development environment used for Texas Security Awareness
 Week (TexSAW) webpage. Actual webpage is compiled from scss and pug files
 included in this repository.
 
-- Demo: [TexSAW 2017 webpage][texsaw-2017]
+- Demos: [TexSAW 2018 webpage][texsaw-2018], [TexSAW 2017 webpage][texsaw-2017]
 - Replaced Design: [TexSAW 2016 webpage][texsaw-2016]
 
+[texsaw-2018]: https://csi.utdallas.edu/events/TexSAW-2018/
 [texsaw-2017]: https://csi.utdallas.edu/events/TexSAW-2017/
 [texsaw-2016]: https://csi.utdallas.edu/events/TexSAW-2016/TexSAW_2016.html
 
