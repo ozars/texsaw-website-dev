@@ -16,23 +16,23 @@ function Data() {
       [
         ['9am-9:30am',      ['Check-in and Continental Breakfast']],
         ['9:30am-11:00am',  [
-          '<a href="presentations/WebSecurity_TexSAW2017.pptx">Web Security</a>',
-          'Travis Wright, Marina George, Nick Ramos']
+          '<a href="#TBD">Penetration Testing</a>',
+          '<!-- Presenters TBD -->']
         ],
         ['11:00am-11:15am', ['Break']],
         ['11:15am-12:45pm', [
-          '<a href="presentations/REPresentation.pdf">An Introduction to Reverse Engineering</a>',
-          'Ian Brown, Ryan Kao, Alan Padilla']
+          '<a href="#TBD">Reverse Engineering</a>',
+          '<!-- Presenters TBD -->']
         ],
         ['12:45pm-1:30pm', ['Lunch (provided)']],
         ['1:30pm-2:30pm', [
-          '<b>State Farm Guest Lecture/Presentation</b><br />' +
-          '<a href="#TBD">Changes and Growth in Cybersecurity</a>',
-          '<a href="state_farm_bio.html">Sean Hollingsead</a>']
+          '<b>Guest Lecture/Presentation</b><br />' +
+          '<a href="#TBD">Topic TBD</a>',
+          'Mitch Adair']
         ],
         ['2:30pm-4:00pm', [
-          '<a href="presentations/TEXSAW 2017 Cryptography.pdf">Cryptography</a>',
-          'Kyle Tillotson, Hugo Espiritu, Tristan Duckworth']
+          '<a href="#TBD">Web Exploitation</a>',
+          '<!-- Presenters TBD -->']
         ]
       ],
       [
