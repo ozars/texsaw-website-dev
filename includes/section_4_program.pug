@@ -19,17 +19,20 @@ div.container.text-center
     i.fa.fa-clock-o
   div.col-md-12
   p.headline Program Schedule for #{short_title}
-  div.col-md12
-    p.
-      We are working hard to prepare a wonderful program for you.<br />Please
-      check back later for the program schedule!
-  //- div.col-md-6.col-xs-12
-  //-   +print_program(0)
-  //- div.col-md-6.col-xs-12
-  //-   +print_program(1)
-  //- div.col-md-6.col-xs-12
-  //-   a.btn.btn-default.requirements(href='sw_hw_requirements.html')
-  //-     p.bigger-text
-  //-       i.fa.fa-cogs
-  //-     p.
-  //-       Software/Hardware Requirements
+  if !program_ready
+    div.col-md12
+      p.
+        We are working hard to prepare a wonderful program for you.<br />Please
+        check back later for the program schedule!
+  else
+    div.col-md-6.col-xs-12
+      +print_program(0)
+    div.col-md-6.col-xs-12
+      +print_program(1)
+  if program_ready && sw_hw_req_ready
+    div.col-md-6.col-xs-12
+      a.btn.btn-default.requirements(href='sw_hw_requirements.html')
+        p.bigger-text
+          i.fa.fa-cogs
+        p.
+          Software/Hardware Requirements

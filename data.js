@@ -10,6 +10,8 @@ function Data() {
     this.accom_date  = 'October 17';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
+    this.program_ready    = true;
+    this.sw_hw_req_ready  = false;
     this.programs = [
       [
         ['9am-9:30am',      ['Check-in and Continental Breakfast']],
