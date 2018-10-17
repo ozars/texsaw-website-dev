@@ -7,7 +7,7 @@ function Data() {
     this.short_name  = 'TexSAW';
     this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
     this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_bei29GAVbrBAxcV';
-    this.accom_date  = 'October 17';
+    this.accom_date  = 'October 19';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.program_ready    = true;
