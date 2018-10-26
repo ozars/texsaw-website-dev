@@ -27,8 +27,8 @@ function Data() {
         ['12:45pm-1:30pm', ['Lunch (provided)']],
         ['1:30pm-2:30pm', [
           '<b>Guest Lecture/Presentation</b><br />' +
-          '<a href="#TBD">Topic TBD</a>',
-          'Mitch Adair']
+          '<a href="#TBD">Hacking The Industry</a>',
+          '<a href="presenter_bio.html">Mitch Adair</a>']
         ],
         ['2:30pm-4:00pm', [
           '<a href="#TBD">Web Exploitation</a>',

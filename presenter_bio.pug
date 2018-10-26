@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{short_title}
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/animate.css')
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    style.
+      body { margin-top: 10vh; }
+      img { margin-bottom: 5vh; height: 20vh; border-radius: 10%; }
+  body
+    div.container
+      //- div.row.text-center
+      //-   img(src='bio_img.jpg')
+      div.row.text-justify
+        div.col-xs-12
+          p.
+            <b>Mitch Adair</b> is a UT Dallas alumnus who currently works for
+            Microsoft. He leads a team of security researchers who proactively
+            discover software vulnerabilities before attackers. Prior to this,
+            Mitch was with Raytheon SI for 5 years where he led a team of
+            vulnerability researchers through the process of vulnerability
+            discovery, exploitation, and weaponization.
+          p.text-center
+            a(href='index.html#program') Back to TexSAW website

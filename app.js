@@ -45,7 +45,7 @@ function compile_all_pug()
   try {
     var data = require('./data.js')();
     compile_pug(data, './index.pug', path.join(outDir, 'index.html'));
-    compile_pug(data, './state_farm_bio.pug', path.join(outDir, 'state_farm_bio.html'));
+    compile_pug(data, './presenter_bio.pug', path.join(outDir, 'presenter_bio.html'));
     compile_pug(data, './sw_hw_requirements.pug', path.join(outDir, 'sw_hw_requirements.html'));
   } catch(err) {
     console.error(err.stack);
