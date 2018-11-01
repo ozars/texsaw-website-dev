@@ -23,7 +23,7 @@ function Data() {
         ['11:00am-11:15am', ['Break']],
         ['11:15am-12:45pm', [
           '<a href="presentations/Final_TexSaw18-Reverse Engineering_slides.pdf">Reverse Engineering</a>',
-          'Alan Padilla, Ricardo Alanis, Stephen Ballenger, Luke Castro, Jake Rawlins']
+          'Alan Padilla, Ricardo Alanis, Stephen Ballenger,<br />Luke Castro, Jake Rawlins']
         ],
         ['12:45pm-1:30pm', ['Lunch (provided)']],
         ['1:30pm-2:30pm', [
