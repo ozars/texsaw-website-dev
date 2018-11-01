@@ -12,28 +12,28 @@ function Data() {
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.reg_enabled     = false;
     this.program_ready   = true;
-    this.sw_hw_req_ready = false;
+    this.sw_hw_req_ready = true;
     this.programs = [
       [
         ['9am-9:30am',      ['Check-in and Continental Breakfast']],
         ['9:30am-11:00am',  [
-          '<a href="#TBD">Penetration Testing</a>',
+          '<a href="presentations/TexSaw Penetration Testing_slides.pdf">Penetration Testing</a>',
           '<!-- Presenters TBD -->']
         ],
         ['11:00am-11:15am', ['Break']],
         ['11:15am-12:45pm', [
-          '<a href="#TBD">Reverse Engineering</a>',
-          '<!-- Presenters TBD -->']
+          '<a href="presentations/Final_TexSaw18-Reverse Engineering_slides.pdf">Reverse Engineering</a>',
+          'Alan Padilla, Ricardo Alanis, Stephen Ballenger, Luke Castro, Jake Rawlins']
         ],
         ['12:45pm-1:30pm', ['Lunch (provided)']],
         ['1:30pm-2:30pm', [
           '<b>Guest Lecture/Presentation</b><br />' +
-          '<a href="#TBD">Hacking The Industry</a>',
+          'Hacking The Industry',
           '<a href="presenter_bio.html">Mitch Adair</a>']
         ],
         ['2:30pm-4:00pm', [
-          '<a href="#TBD">Web Exploitation</a>',
-          '<!-- Presenters TBD -->']
+          '<a href="presentations/WebSecurity_slides.pdf">Web Exploitation</a>',
+          'Jace Baker, Nick Ramos, Hugo Espiritu, Andrew Le']
         ]
       ],
       [
