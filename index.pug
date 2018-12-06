@@ -1,3 +1,4 @@
+- var results_line = (results_ready ? "'results'," : "")
 doctype html
 html
   head
@@ -21,7 +22,7 @@ html
           bigSectionsDestination: top,
           anchors: [
             'introduction',
-            //- 'results',
+            #{results_line}
             'description',
             'accommodation',
             'program',
@@ -53,8 +54,9 @@ html
     div#fullpage
       div.section.text-center.white-text.flame-orange
         include includes/section_1_intro.pug
-      //- div.section.text-center.white-text.solar-orange
-      //-   include includes/section_1a_results.pug
+      if results_ready
+        div.section.text-center.white-text.solar-orange
+          include includes/section_1a_results.pug
       div.section.white-text.eco-green
         include includes/section_2_description.pug
       div.section.white-text.space-blue

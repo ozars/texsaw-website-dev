@@ -12,6 +12,7 @@ function Data() {
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.reg_enabled     = false;
     this.program_ready   = true;
+    this.results_ready   = true;
     this.sw_hw_req_ready = true;
     this.programs = [
       [
