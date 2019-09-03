@@ -1,8 +1,8 @@
 function Data() {
     /* CONFIGURATION PART */
 
-    this.year        = '2018';
-    this.dates       = ['11/02/2018', '11/03/2018'];
+    this.year        = '2019';
+    this.dates       = ['11/01/2018', '11/02/2018'];
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
     this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
@@ -10,10 +10,11 @@ function Data() {
     this.accom_date  = 'October 19';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
-    this.reg_enabled     = false;
-    this.program_ready   = true;
-    this.results_ready   = true;
-    this.sw_hw_req_ready = true;
+    this.reg_enabled         = false;
+    this.accommodation_ready = false;
+    this.program_ready       = false;
+    this.results_ready       = false;
+    this.sw_hw_req_ready     = false;
     this.programs = [
       [
         ['9am-9:30am',      ['Check-in and Continental Breakfast']],

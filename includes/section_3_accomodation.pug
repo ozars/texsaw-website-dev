@@ -1,8 +1,20 @@
-div.container
+div.container.text-center
   div.col-md-12.text-center.bigger-text
     i.fa.fa-bed
-  p.headline Accommodation grants (a limited number based on double occupancy) are available for students coming from outside the DFW Metroplex area.
-  p Applicants must have a current GPA of at least 2.7 and be enrolled in a computer science, MIS, IT, or other related program. Please apply with a copy of your current unofficial transcript and a personal statement on the expected benefits of attending these events by filling <a href="#{accom_link}" target="_blank">this form</a> by #{accom_date}. Please include your gender as well as any specific roommate request.
-  p
-    form(action=accom_link, method='get').text-center
-      input.btn.btn-primary.btn-lg(type='submit', value='Apply for accommodation grant')
+  p.headline.
+    Accommodation grants (a limited number based on double occupancy) are
+    available for students coming from outside the DFW Metroplex area.
+  if !accommodation_ready
+    p.
+      Application details will be announced soon. Please check back later!
+  else
+    p.
+      Applicants must have a current GPA of at least 2.7 and be enrolled in
+      a computer science, MIS, IT, or other related program. Please apply with
+      a copy of your current unofficial transcript and a personal statement on
+      the expected benefits of attending these events by filling <a
+      href="#{accom_link}" target="_blank">this form</a> by #{accom_date}.
+      Please include your gender as well as any specific roommate request.
+    p
+      form(action=accom_link, method='get').text-center
+        input.btn.btn-primary.btn-lg(type='submit', value='Apply for accommodation grant')
