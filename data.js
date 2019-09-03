@@ -1,8 +1,7 @@
 function Data() {
     /* CONFIGURATION PART */
 
-    this.year        = '2019';
-    this.dates       = ['11/01/2018', '11/02/2018'];
+    this.dates       = ['11/01/2019', '11/02/2019'];
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
     this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
@@ -49,19 +48,20 @@ function Data() {
 
     /* AUTO GENERATE PART */
 
-    this.nth         = this.ordSuffixOf(parseInt(this.year) - 2010);
-    this.short_title = this.short_name + ' ' + this.year;
-    this.long_title  = this.nth + ' ' + this.long_name;
     this.dates       = this.dates.map(x => new Date(x));
+    this.year        = 1900 + this.dates[0].getYear();
     this.weekDays    = this.dates.map(x => x.toLocaleDateString('en-US', { weekday : 'long' }));
     this.days        = this.dates.map(x => x.getDate());
     this.daysth      = this.days.map(x => this.ordSuffixOf(x));
     this.months      = this.dates.map(x => x.toLocaleDateString('en-US', { month : 'long' }));
+    this.nth         = this.ordSuffixOf(parseInt(this.year) - 2010);
+    this.short_title = this.short_name + ' ' + this.year;
+    this.long_title  = this.nth + ' ' + this.long_name;
     this.meta_desc   =
      `${this.long_title}, ${this.days[0]}-${this.days[1]} ${this.months[0]}
       ${this.year}, Richardson. ${this.short_title} targets students who are
       interested in pursuing computer security. Students will be exposed to
-      security concepts which will expand their knowledge of cyber security and
+      security concepts which will expand their knowledge of cybersecurity and
       broaden their career opportunities.` .replace(/\s*\r?\n\s*/g, " ");
 }
 
