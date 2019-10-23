@@ -11,30 +11,26 @@ function Data() {
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
     this.reg_enabled         = true;
     this.accommodation_ready = true;
-    this.program_ready       = false;
+    this.program_ready       = true;
     this.results_ready       = false;
     this.sw_hw_req_ready     = false;
     this.programs = [
       [
-        ['9am-9:30am',      ['Check-in and Continental Breakfast']],
-        ['9:30am-11:00am',  [
-          '<a href="presentations/TexSaw Penetration Testing_slides.pdf">Penetration Testing</a>',
-          '<!-- Presenters TBD -->']
+        ['8:30am-9am', ['Check-in and Continental Breakfast']],
+        ['9am-10:30am', [
+            'Penetration Testing']
         ],
-        ['11:00am-11:15am', ['Break']],
-        ['11:15am-12:45pm', [
-          '<a href="presentations/Final_TexSaw18-Reverse Engineering_slides.pdf">Reverse Engineering</a>',
-          'Alan Padilla, Ricardo Alanis, Stephen Ballenger,<br />Luke Castro, Jake Rawlins']
+        ['10:30am-10:45am', ['Break']],
+        ['10:45am-12.15pm', [
+          'Reverse Engineering']
         ],
-        ['12:45pm-1:30pm', ['Lunch (provided)']],
-        ['1:30pm-2:30pm', [
-          '<b>Guest Lecture/Presentation</b><br />' +
-          'Hacking The Industry',
-          '<a href="presenter_bio.html">Mitch Adair</a>']
+        ['12:15pm-1:15pm', ['Lunch (provided)']],
+        ['1:15pm-2:15pm', [
+          'Introduction to CTF Competitions',
+          'Henry Wang']
         ],
-        ['2:30pm-4:00pm', [
-          '<a href="presentations/WebSecurity_slides.pdf">Web Exploitation</a>',
-          'Jace Baker, Nick Ramos, Hugo Espiritu, Andrew Le']
+        ['2:15pm-3:45pm', [
+          'Digital Forensics']
         ]
       ],
       [
