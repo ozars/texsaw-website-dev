@@ -1,6 +1,7 @@
 /node_modules/
 /artifacts/
 /www/css/default.css
+/www/data/
 /webdav/
 *.html
 *.log

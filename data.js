@@ -6,31 +6,34 @@ function Data() {
     this.short_name  = 'TexSAW';
     this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
     this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_3IgmZASySsgPgpv';
-    this.accom_date  = 'October 18';
+    this.accom_date  = 'October 24';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['TI Auditorium, ECSS 2.102', 'TI Auditorium, ECSS 2.102'];
-    this.reg_enabled         = true;
+    this.reg_enabled         = false;
     this.accommodation_ready = true;
     this.program_ready       = true;
     this.results_ready       = false;
-    this.sw_hw_req_ready     = false;
+    this.sw_hw_req_ready     = true;
     this.programs = [
       [
         ['8:30am-9am', ['Check-in and Continental Breakfast']],
         ['9am-10:30am', [
-            'Penetration Testing']
+          '<i>Penetration Testing</i>',
+          'Brandon Marzik, Henry Tran, Ari Bender-Long,<br />Vishal Madipadga']
         ],
         ['10:30am-10:45am', ['Break']],
         ['10:45am-12.15pm', [
-          'Reverse Engineering']
+          '<i>Reverse Engineering</i>',
+          'Lucas Castro, Ricardo Alanis, Eric Rogers,<br />Jennifer Ward']
         ],
         ['12:15pm-1:15pm', ['Lunch (provided)']],
         ['1:15pm-2:15pm', [
-          'Introduction to CTF Competitions',
+          '<i>Introduction to CTF Competitions</i>',
           'Henry Wang']
         ],
         ['2:15pm-3:45pm', [
-          'Digital Forensics']
+          '<i>Digital Forensics</i>',
+          'Stephen Ballenger, Xavier Cadot,<br />Hailey Gage, Nick Ramos, Evelyn Wong']
         ]
       ],
       [
