@@ -18,21 +18,21 @@ function Data() {
       [
         ['8:30am-9am', ['Check-in and Continental Breakfast']],
         ['9am-10:30am', [
-          '<i>Penetration Testing</i>',
+          '<a href="https://docs.google.com/presentation/d/1QyH-fqj5P1V6s7A5baVwb6YlRuAHp1Vn0S-VosGzM0Q/edit?usp=sharing">Penetration Testing</a>',
           'Brandon Marzik, Henry Tran, Ari Bender-Long,<br />Vishal Madipadga']
         ],
         ['10:30am-10:45am', ['Break']],
         ['10:45am-12.15pm', [
-          '<i>Reverse Engineering</i>',
+          '<a href="presentations/TexSaw - Reverse Engineering .pptx">Reverse Engineering</a>',
           'Lucas Castro, Ricardo Alanis, Eric Rogers,<br />Jennifer Ward']
         ],
         ['12:15pm-1:15pm', ['Lunch (provided)']],
         ['1:15pm-2:15pm', [
-          '<i>Introduction to CTF Competitions</i>',
+          '<b>Guest Lecture/Presentation</b><br /><i>Introduction to CTF Competitions</i>',
           'Henry Wang']
         ],
         ['2:15pm-3:45pm', [
-          '<i>Digital Forensics</i>',
+          '<a href="presentations/TXSAW 2019 Forensics .pdf">Digital Forensics</a>',
           'Stephen Ballenger, Xavier Cadot,<br />Hailey Gage, Nick Ramos, Evelyn Wong']
         ]
       ],
