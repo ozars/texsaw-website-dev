@@ -12,7 +12,7 @@ function Data() {
     this.reg_enabled         = false;
     this.accommodation_ready = true;
     this.program_ready       = true;
-    this.results_ready       = false;
+    this.results_ready       = true;
     this.sw_hw_req_ready     = true;
     this.programs = [
       [
