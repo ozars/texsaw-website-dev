@@ -77,5 +77,7 @@ watch('./', { recursive: true, filter: (name) => ignoredWatch(/(\.pug$)|(\.js$)/
 compile_all_scss();
 compile_all_pug();
 
-console.log('Starting server...');
-var server = app.listen(8081);
+const PORT = 8082;
+
+console.log(`Starting server on http://localhost:${PORT}`);
+app.listen(PORT);
