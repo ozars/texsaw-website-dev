@@ -79,5 +79,5 @@ compile_all_pug();
 
 const PORT = 8082;
 
-console.log(`Starting server on http://localhost:${PORT}`);
+console.log(`Starting server on http://0.0.0.0:${PORT}`);
 app.listen(PORT);
