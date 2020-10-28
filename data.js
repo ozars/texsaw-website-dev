@@ -4,12 +4,13 @@ function Data() {
     this.dates       = ['11/14/2020', '11/15/2020'];
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
-    this.reg_link    = 'https://ezpay.utdallas.edu/C20239_ustores/web/classic/store_main.jsp?STOREID=158';
+    this.reg_link    = 'https://utdallas.qualtrics.com/jfe/form/SV_5yYqbY3sEs5msPb';
     this.accom_link  = 'https://utdallas.qualtrics.com/jfe/form/SV_3IgmZASySsgPgpv';
     this.accom_date  = 'TBA';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['Virtual', 'Virtual'];
-    this.reg_enabled         = false;
+    this.reg_enabled         = true;
+    this.reg_deadline        = "11 Nov 2020";
     this.accommodation_ready = false;
     this.program_ready       = false;
     this.results_ready       = false;
