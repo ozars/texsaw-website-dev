@@ -1,6 +1,8 @@
+mixin linkify(link)
+  a(href=link) #{link}
 div.container
   div.col-md-12.text-center.bigger-text
-    i.fa.fa-calendar
+    i.fa.fa-calendar(aria-label="Event Description Page")
   div.col-md-12
     p.headline We are excited to offer our #{long_title} (#{short_title}) event.
     p.text-center.
@@ -14,3 +16,39 @@ div.container
       online material for reviewing basics topics in these topic areas and
       students are encouraged to go over this material to prepare themselves
       for the competition.
+    ul
+      li Brief, simple walk through of basic forensics and tools used in CTFs
+        ul
+          li
+            +linkify("https://busy.org/@jlordc/forensics-101-basic-approach-to-file-analysis")
+      li Forensics Overview
+        ul
+          li
+            +linkify("https://trailofbits.github.io/ctf/forensics/")
+      li CTF practice problems
+        ul
+          li
+            +linkify("https://drewadwade.github.io/ctfs/2019/CTFLearnEasy.html")
+          li
+            +linkify("https://ctflearn.com")
+          li
+            +linkify("https://haxf4rall.com/2019/06/29/ctf-guide/")
+          li
+            +linkify("https://medium.com/secjuice/brain-gamez-a-forensic-challenge-dea4ac30b389")
+          li
+            +linkify("https://ctflearn.com/challenge/96")
+          li
+            +linkify("https://www.embeddedhacker.com/2019/12/hacking-walkthrough-ctflearn-forensics-easy/")
+          li
+            +linkify("https://www.embeddedhacker.com/2020/01/hacking-walkthrough-ctflearn-forensics-medium/")
+          li
+            +linkify("https://www.youtube.com/watch?v=9n-ve_AXsI0")
+      li File Formats Cheat Sheet
+        ul
+          li Used for file carving challenges
+          li
+            +linkify("https://digital-forensics.sans.org/media/hex_file_and_regex_cheat_sheet.pdf")
+      li Autopsy Tutorial
+        ul
+          li
+            +linkify("https://hub.packtpub.com/digital-forensics-using-autopsy/")
