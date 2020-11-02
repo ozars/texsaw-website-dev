@@ -1,0 +1,143 @@
+mixin linkify(link)
+  a(href=link) #{link}
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    base(target='_blank')
+    title #{short_title}
+    link(rel='stylesheet', href='css/darkly/bootstrap.min.css')
+    link(rel='stylesheet', href='css/fontawesome/css/all.min.css')
+    link(rel='stylesheet', href='css/animate.css')
+    script(src='js/jquery.min.js')
+    script(src='js/bootstrap.min.js')
+    style.
+      body { margin-top: 5vh; margin-bottom: 5vh; }
+  body
+    div.container
+      div.row
+        div.col-xs-12
+          p
+            a(href='index.html#description', target='_self')
+              i.fa.fa-home &nbsp;
+              | Back to TexSAW homepage
+          hr
+          h1 Suggested Material
+          ul
+            li Forensics Overview
+              ul
+                li
+                  +linkify("https://trailofbits.github.io/ctf/forensics/")
+            li CTF practice problems
+              ul
+                li
+                  +linkify("https://ctflearn.com")
+                li
+                  +linkify("https://medium.com/secjuice/brain-gamez-a-forensic-challenge-dea4ac30b389")
+                li
+                  +linkify("https://ctflearn.com/challenge/96")
+                li
+                  +linkify("https://www.youtube.com/watch?v=9n-ve_AXsI0")
+            li File Formats Cheat Sheet
+              ul
+                li Used for file carving challenges
+                li
+                  +linkify("https://digital-forensics.sans.org/media/hex_file_and_regex_cheat_sheet.pdf")
+            li Autopsy Tutorial
+              ul
+                li
+                  +linkify("https://hub.packtpub.com/digital-forensics-using-autopsy/")
+            li Cryptography
+              ul
+                li
+                  +linkify("https://blog.sigmaprime.io/introduction-to-rsa.html")
+                li
+                  +linkify("https://sectigo.com/resource-library/public-key-vs-private-key")
+                li
+                  +linkify("https://www.youtube.com/watch?v=GSIDS_lvRv4")
+                li
+                  +linkify("https://www.youtube.com/watch?v=NmM9HA2MQGI")
+                li
+                  +linkify("https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/")
+                li
+                  +linkify("https://www.youtube.com/watch?v=lvTqbM5Dq4Q")
+                li
+                  +linkify("https://www.youtube.com/watch?v=SQB9zNWw9MA")
+                li
+                  +linkify("https://www.youtube.com/watch?v=8qkxeZmKmOY")
+                li
+                  +linkify("http://docs.pwntools.com/en/stable/util/fiddling.html")
+                li
+                  +linkify("http://netlab.cs.ucla.edu/wiki/files/shannon1949.pdf")
+            li Web Security
+              ul
+                li
+                  +linkify("https://www.youtube.com/watch?v=c5RL-0w9o3g")
+                li
+                  +linkify("https://ctf101.org/web-exploitation/overview/")
+                li
+                  +linkify("https://owasp.org/www-project-juice-shop/")
+                li
+                  +linkify("https://github.com/ChALkeR/notes/blob/master/Buffer-knows-everything.md")
+            li Penetration Testing
+              ul
+                li UTD Cyber Security Group content/videos/Demos
+                  ul
+                    li
+                      a(href="https://www.youtube.com/watch?v=dweA08aORHY").
+                        Introduction to Domains and Hacking
+                    li
+                      a(href="https://www.youtube.com/watch?v=JYEnMiZGFP8").
+                        Penetration Testing Walkthrough
+                    li
+                      a(href="https://www.youtube.com/watch?v=IV-HlcdvWaM").
+                        Privilege Escalation
+                    li
+                      a(href="https://www.youtube.com/watch?v=g_fJ3buqVLk").
+                        Hack the Box – Celestial
+                li Stack smashing
+                  ul
+                    li Buffer overflow tutorial showing overwrite of return address:
+                      ul
+                        li
+                          a(href="https://www.tenouk.com/Bufferoverflowc/Bufferoverflow4.html").
+                            A step-by-step on the computer buffer overflow vulnerability tutorials on Intel x86 processor and C standard function call
+                    li
+                      a(href="https://www.tutorialspoint.com/gnu_debugger/gdb_commands.htm").
+                        GDB – Commands
+                    li Suggest using gdb with gef plugin
+                      ul
+                        li
+                          a(href="https://gef.readthedocs.io/en/master/").
+                            Home - GEF - GDB Enhanced Features documentation
+                li
+                  a(href="https://www.varonis.com/blog/nmap-commands/").
+                    Port scanning with NMAP
+                li
+                  a(href="https://www.youtube.com/watch?v=fTGTnrgjuGA").
+                    Ghidra for reverse engineering, short introduction
+                li References and Recommendations
+                  ul
+                    li Practice Safely Penetration Testing:&nbsp;
+                      a(href="https://www.hackthebox.eu/") HACKTHEBOX
+                    li Hackthebox:&nbsp;
+                      a(href="https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA").
+                        IPSec
+                    li Linux CTF problems:&nbsp;
+                      a(href="http://overthewire.org/wargames/bandit/") Bandit
+                    li Edgy Cyber Podcast:&nbsp;
+                      a(href="https://darknetdiaries.com/").
+                        Darknet Dairies
+                    li Reverse Engineer:&nbsp;
+                      a(href="https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w").
+                        LiveOverflow
+
+                li
+                  a(href="https://github.com/H4CK3RT3CH/Awesome-Pentest-Reference#ctf-tools").
+                    Master List of Resources
+          hr
+          p
+            a(href='index.html#description', target='_self')
+              i.fa.fa-home &nbsp;
+              | Back to TexSAW homepage
