@@ -17,6 +17,6 @@
     "node-watch": "^0.7.0",
     "nodemon": "^2.0.6",
     "npm-check-updates": "^9.1.2",
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   }
 }
