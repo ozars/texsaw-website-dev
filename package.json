@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "node-watch": "^0.7.0",
     "nodemon": "^2.0.6",
     "npm-check-updates": "^9.1.2",
