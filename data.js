@@ -1,7 +1,7 @@
 function Data() {
     /* CONFIGURATION PART */
 
-    this.dates       = ['11/14/2020', '11/15/2020'];
+    this.dates       = ['04/22/2022', '04/23/2022'];
     this.long_name   = 'Texas Security Awareness Week';
     this.short_name  = 'TexSAW';
     this.reg_link    = 'https://utdallas.qualtrics.com/jfe/form/SV_5yYqbY3sEs5msPb';
@@ -9,8 +9,8 @@ function Data() {
     this.accom_date  = 'TBA';
     this.program_subjects = ['Student Workshops', 'Student Competition'];
     this.program_places   = ['Virtual', 'Virtual'];
-    this.reg_enabled         = true;
-    this.reg_deadline        = "11 Nov 2020";
+    this.reg_enabled         = false;
+    this.reg_deadline        = "28 Feb 2022";
     this.accommodation_ready = false;
     this.program_ready       = false;
     this.results_ready       = false;
@@ -54,7 +54,7 @@ function Data() {
     this.days        = this.dates.map(x => x.getDate());
     this.daysth      = this.days.map(x => this.ordSuffixOf(x));
     this.months      = this.dates.map(x => x.toLocaleDateString('en-US', { month : 'long' }));
-    this.nth         = this.ordSuffixOf(parseInt(this.year) - 2010);
+    this.nth         = this.ordSuffixOf(parseInt(this.year) - 2010 - (this.year >= 2022));
     this.short_title = this.short_name + ' ' + this.year;
     this.long_title  = this.nth + ' ' + this.long_name;
     this.meta_desc   =
