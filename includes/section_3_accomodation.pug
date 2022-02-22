@@ -13,8 +13,8 @@ div.container.text-center
       a computer science, MIS, IT, or other related program. Please apply with
       a copy of your current unofficial transcript and a personal statement on
       the expected benefits of attending these events by filling <a
-      href="#{accom_link}" target="_blank">this form</a> by #{accom_date}.
+      href="#{accom_link}" target="_blank">this form</a> by <b>#{accom_date}</b>.
       Please include your gender as well as any specific roommate request.
     p
-      form(action=accom_link, method='get').text-center
+      form(action=accom_link, method='get', target='_blank').text-center
         input.btn.btn-primary.btn-lg(type='submit', value='Apply for accommodation grant')
