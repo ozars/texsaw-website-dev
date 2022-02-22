@@ -12,9 +12,9 @@ function Data() {
     this.reg_enabled         = true;
     this.reg_deadline        = "";
     this.accommodation_ready = true;
-    this.program_ready       = false;
-    this.results_ready       = false;
-    this.sw_hw_req_ready     = false;
+    this.program_ready       = true;
+    this.results_ready       = true;
+    this.sw_hw_req_ready     = true;
     this.programs = [
       [
         ['8:30am-9am', ['Check-in and Continental Breakfast']],
